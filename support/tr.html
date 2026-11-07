@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PersonalHub Türkçe destek sayfası." />
+  <title>PersonalHub - Destek</title>
+
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #ffffff;
+      --surface: #f8fafc;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --accent: #2563eb;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0f172a;
+        --surface: #1e293b;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --border: #334155;
+        --accent: #60a5fa;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px 20px;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .languages {
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .languages a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .languages a.active {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .languages a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 21px;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin: 12px 0;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .contact {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 20px;
+    }
+
+    .contact p {
+      margin-bottom: 0;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer a {
+      color: var(--accent);
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 24px 16px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .brand {
+        font-size: 19px;
+      }
+
+      .contact {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <div class="brand">PersonalHub</div>
+
+      <nav class="languages" aria-label="Dil seçimi">
+        <a href="./">English</a>
+        <span aria-hidden="true"> | </span>
+        <a href="tr.html" class="active" aria-current="page">
+          Türkçe
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Destek</h1>
+
+      <p>
+        PersonalHub destek sayfasına hoş geldiniz.
+      </p>
+
+      <p>
+        PersonalHub hakkında sorularınız varsa,
+        bir sorunla karşılaştıysanız veya görüşlerinizi
+        paylaşmak istiyorsanız bizimle iletişime geçebilirsiniz.
+      </p>
+
+      <h2>İletişim</h2>
+
+      <div class="contact">
+        <p>
+          Teknik destek, hata bildirimleri veya genel
+          sorularınız için aşağıdaki e-posta adresini
+          kullanabilirsiniz:
+        </p>
+
+        <p>
+          <strong>E-posta:</strong>
+          <a href="mailto:support@erkanozmenli.com">
+            support@erkanozmenli.com
+          </a>
+        </p>
+      </div>
+
+      <h2>Hangi konularda yardımcı olabiliriz?</h2>
+
+      <ul>
+        <li>Hatırlatıcılar ve bildirimler</li>
+        <li>Belgeler, yerler ve ek dosyalar</li>
+        <li>Yedekleme ve geri yükleme</li>
+        <li>Teknik sorunlar ve hata bildirimleri</li>
+        <li>Öneriler ve geri bildirimler</li>
+      </ul>
+
+      <h2>Gizlilik</h2>
+
+      <p>
+        PersonalHub'ın verilerinizi nasıl işlediği hakkında
+        bilgi almak için
+        <a href="../privacy/tr.html">
+          Gizlilik Politikamızı
+        </a>
+        inceleyebilirsiniz.
+      </p>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2026 PersonalHub.
+        <a href="../privacy/tr.html">Gizlilik Politikası</a>
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>
