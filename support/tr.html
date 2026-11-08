@@ -1,64 +1,50 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PersonalHub Türkçe destek sayfası.">
+  <meta name="description" content="PersonalHub support: contact us about reminders, documents, places, backups, and technical issues.">
   <title>PersonalHub – Destek</title>
   <style>
-    :root { color-scheme: light dark; --bg:#fff; --surface:#f8fafc; --text:#1e293b; --muted:#64748b; --border:#e2e8f0; --accent:#2563eb; }
-    @media (prefers-color-scheme: dark) { :root { --bg:#0f172a; --surface:#1e293b; --text:#f1f5f9; --muted:#94a3b8; --border:#334155; --accent:#60a5fa; } }
-    * { box-sizing:border-box; }
-    body { margin:0; padding:32px 20px; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; line-height:1.7; }
-    .container { max-width:800px; margin:0 auto; }
-    header { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-bottom:40px; padding-bottom:20px; border-bottom:1px solid var(--border); }
-    .brand { font-size:22px; font-weight:700; }
-    nav { font-size:14px; }
-    nav a { color:var(--muted); text-decoration:none; }
-    nav a.active { color:var(--accent); font-weight:600; }
-    nav a:hover { text-decoration:underline; }
-    h1 { font-size:32px; margin:0 0 16px; }
-    h2 { font-size:21px; margin:36px 0 12px; }
-    p { margin:12px 0; }
-    ul { padding-left:24px; }
-    li { margin-bottom:8px; }
-    a { color:var(--accent); }
-    .contact { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:24px; margin-top:20px; overflow-wrap:anywhere; }
-    footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--border); color:var(--muted); font-size:14px; }
-    @media (max-width:480px) { body { padding:24px 16px; } h1 { font-size:28px; } .brand { font-size:19px; } .contact { padding:18px; } }
+    :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.65; background: #f6f8fb; color: #1d2939; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 36px 18px; }
+    main { max-width: 760px; margin: 0 auto; padding: 36px 42px; background: #fff; border: 1px solid #e6eaf0; border-radius: 16px; box-shadow: 0 8px 30px rgba(16,24,40,.05); }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 1px solid #e6eaf0; padding-bottom: 18px; }
+    .brand { font-size: 1.3rem; font-weight: 750; letter-spacing: -.02em; }
+    nav { font-size: .9rem; white-space: nowrap; }
+    nav a { margin-left: 10px; }
+    h1 { font-size: 2rem; line-height: 1.2; margin: 32px 0 12px; }
+    h2 { font-size: 1.15rem; margin-top: 30px; }
+    p, li { font-size: 1rem; }
+    ul { padding-left: 22px; }
+    a { color: #1769aa; text-underline-offset: 3px; }
+    footer { border-top: 1px solid #e6eaf0; margin-top: 36px; padding-top: 18px; font-size: .92rem; }
+    @media (max-width: 600px) { body { padding: 0; } main { padding: 24px 22px; border: 0; border-radius: 0; min-height: 100vh; } h1 { font-size: 1.75rem; } }
+    @media (prefers-color-scheme: dark) { :root { background: #10151d; color: #e7edf6; } main { background: #19212c; border-color: #354050; box-shadow: none; } header, footer { border-color: #354050; } a { color: #8dc8ff; } }
   </style>
 </head>
 <body>
-  <div class="container">
+  <main>
     <header>
       <div class="brand">PersonalHub</div>
-      <nav aria-label="Dil seçimi">
-        <a href="./" lang="en">English</a>
-        <span aria-hidden="true"> | </span>
-        <a href="tr.html" class="active" aria-current="page">Türkçe</a>
-      </nav>
+      <nav aria-label="Language"><a href="index.html" lang="tr">English</a><strong>Türkçe</strong></nav>
     </header>
-    <main>
-      <h1>Destek</h1>
-      <p>PersonalHub destek sayfasına hoş geldiniz.</p>
-      <p>PersonalHub hakkında sorularınız varsa, bir sorunla karşılaştıysanız veya görüşlerinizi paylaşmak istiyorsanız bizimle iletişime geçebilirsiniz.</p>
-      <h2>İletişim</h2>
-      <div class="contact">
-        <p>Teknik destek, hata bildirimleri veya genel sorularınız için aşağıdaki e-posta adresini kullanabilirsiniz:</p>
-        <p><strong>E-posta:</strong> <a href="mailto:support@erkanozmenli.com">support@erkanozmenli.com</a></p>
-      </div>
-      <h2>Hangi konularda yardımcı olabiliriz?</h2>
-      <ul>
+    <h1>Destek</h1>
+    <p>PersonalHub destek sayfasına hoş geldiniz.</p>
+    <p>PersonalHub hakkında sorularınız varsa, bir sorunla karşılaştıysanız veya görüşlerinizi paylaşmak istiyorsanız bizimle iletişime geçebilirsiniz.</p>
+    <h2>İletişim</h2>
+    <p>Teknik destek, hata bildirimleri veya genel sorularınız için aşağıdaki e-posta adresini kullanabilirsiniz:</p>
+    <p><strong>E-posta:</strong> <a href="mailto:support@erkanozmenli.com">support@erkanozmenli.com</a></p>
+    <h2>Hangi konularda yardımcı olabiliriz?</h2>
+    <ul>
         <li>Hatırlatıcılar ve bildirimler</li>
         <li>Belgeler, yerler ve ek dosyalar</li>
         <li>Yedekleme ve geri yükleme</li>
         <li>Teknik sorunlar ve hata bildirimleri</li>
         <li>Öneriler ve geri bildirimler</li>
       </ul>
-      <h2>Gizlilik</h2>
-      <p>PersonalHub'ın verilerinizi nasıl işlediği hakkında bilgi almak için <a href="../privacy/tr.html">Gizlilik Politikamızı</a> inceleyebilirsiniz.</p>
-    </main>
-    <footer><p>&copy; 2026 PersonalHub. <a href="../privacy/tr.html">Gizlilik Politikası</a></p></footer>
-  </div>
+    <footer><a href="../privacy/tr.html">Gizlilik</a></footer>
+  </main>
 </body>
 </html>
